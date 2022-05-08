@@ -39,7 +39,7 @@ window.onload = function () {
 function good_response(){
     var intext = document.createElement("p");
     intext.className = "from-them"
-    const items = ['wow thats so cool',"no way"]
+    const items = ['wow thats so cool',"no way","thats super interesting","thanks for telling me about that","I am super interested in this topic","How cool","the brain is amazing, wow"]
     var item = items[Math.floor(Math.random()*items.length)];
     intext.innerHTML = item;
 
@@ -52,7 +52,7 @@ function bad_response(){
     var intext = document.createElement("p");
     intext.className = "from-them"
 
-    intext.innerHTML = "boooooo talk about the brain";
+    intext.innerHTML = "can you talk about the brain instead {make sure to use the word brain, lobe, or cortex}";
 
     var body1 = document.getElementById("container");
     var body2 = (body1.getElementsByClassName("imessage")[0])
